@@ -7,15 +7,8 @@ import openpyxl
 import datetime
 
 #Excelファイルパス指定
-excel_path = 'dates.xlsx'
-wb = openpyxl.Workbook()
-
 book = openpyxl.load_workbook('dates.xlsx')
 sheet = book.active
-
-#Excelファイル作成
-if os.path.exists(excel_path) == False:
-    wb.save('dates.xlsx')
 
 #日時取得
 dt = datetime.datetime.now()

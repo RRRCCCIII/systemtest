@@ -10,8 +10,8 @@ ng () {
 res=0
 
 ####
-out=$(seq 5 | ./timecard.py)
-[ "${out}" = 15 ] || ng ${LINENO}
+out=$(./timecard.py)
+[ "${out}" = 6 ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit $res

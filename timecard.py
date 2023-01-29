@@ -16,7 +16,8 @@ dt = datetime.datetime.now()
 #配列
 dta = [dt.year, dt.month, dt.day, dt.hour, dt.minute, dt.second]
 
-print(len(dta))
+#print(len(dta))
+print(dta)
 
 i = 1
 

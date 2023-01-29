@@ -11,7 +11,7 @@ res=0
 
 ####
 out=$(./timecard.py)
-[ "${out}" = 6 ] || ng ${LINENO}
+[ "${len(out)}" = 6 ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit $res
